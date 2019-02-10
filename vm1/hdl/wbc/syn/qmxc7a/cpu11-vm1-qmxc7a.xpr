@@ -213,7 +213,7 @@
       </Config>
     </FileSet>
     <FileSet Name="xram_16k" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xram_16k">
-      <File Path="$PPDIR/ip/xram_16k/xram_16k.xci">
+      <File Path="$PPRDIR/ip/xram_16k/xram_16k.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
