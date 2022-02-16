@@ -19,7 +19,7 @@
 // PLL selector - only one of available PLL type must be defined
 // The appropriate .sdc file musy be copied to provide constraints
 //
-`define  CONFIG_PLL_50        1
+`define  CONFIG_PLL_54        1
 
 // `define  CONFIG_PLL_50     1
 // `define  CONFIG_PLL_66     1
@@ -51,6 +51,10 @@
 //
 `ifdef   CONFIG_PLL_50
 `define  CONFIG_SYS_CLOCK     50000000
+`endif
+
+`ifdef   CONFIG_PLL_54
+`define  CONFIG_SYS_CLOCK     54000000
 `endif
 
 `ifdef   CONFIG_PLL_66
