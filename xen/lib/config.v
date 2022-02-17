@@ -9,7 +9,6 @@
 // CPU selector - only one of available CPU type must be defined
 //
 `define CONFIG_CPU_VM3        1
-
 //`define CONFIG_CPU_VM1      1
 //`define CONFIG_CPU_VM2      1
 //`define CONFIG_CPU_VM3      1
@@ -22,8 +21,8 @@
 // The appropriate .sdc file must be copied to provide constraints
 //
 
-`define  CONFIG_PLL_54        1
 // `define  CONFIG_PLL_50     1
+`define  CONFIG_PLL_54        1
 // `define  CONFIG_PLL_66     1
 // `define  CONFIG_PLL_75     1
 // `define  CONFIG_PLL_100    1
