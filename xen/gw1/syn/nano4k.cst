@@ -1,0 +1,30 @@
+//DK_START_GW1NSR4C_QN48P V1.1
+//GW1NSR-LV4CQN48PC7/I6
+//GW1NSR-4C
+// -- Sipeed Nano 4K pinout
+
+//MCU system clock
+IO_LOC "n4k_clk_27" 45; //F_CLK
+IO_PORT "n4k_clk_27" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "n4k_key1_n" 14; //KEY1
+IO_PORT "n4k_key1_n" IO_TYPE=LVCMOS18 PULL_MODE=UP;
+
+//MCU system reset
+IO_LOC "n4k_key2_n" 15;//KEY2
+IO_PORT "n4k_key2_n" IO_TYPE=LVCMOS18 PULL_MODE=UP;
+
+//LED
+IO_LOC "n4k_led1" 10;// LED1
+IO_PORT "n4k_led1" PULL_MODE=NONE DRIVE=8;
+
+//KEY
+//IO_LOC "gpioin" 21;//KEY1
+//IO_PORT "gpioin" IO_TYPE=LVCMOS25;
+//IO_PORT "gpioin" IO_TYPE=LVCMOS18;
+
+//UART0
+IO_LOC "n4k_uart_rxd" 17;//UART_RXD
+IO_LOC "n4k_uart_txd" 16;//UART_TXD
+IO_PORT "n4k_uart_rxd" IO_TYPE=LVCMOS33;
+IO_PORT "n4k_uart_txd" IO_TYPE=LVCMOS33;

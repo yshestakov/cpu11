@@ -151,7 +151,7 @@ function cmp
    input [30:0] mi
 );
 begin
-   casex(ai)
+   casex(ai)     /* synthesis full_case*/
       mi:      cmp = 1'b1;
       default: cmp = 1'b0;
    endcase
@@ -685,7 +685,7 @@ function cmp
    input [30:0] mi
 );
 begin
-   casex(ai)
+   casex(ai)   /* synthesis full_case */
       mi:      cmp = 1'b1;
       default: cmp = 1'b0;
    endcase
