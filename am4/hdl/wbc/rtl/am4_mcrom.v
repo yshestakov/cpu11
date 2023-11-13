@@ -39,8 +39,7 @@ begin
 `ifdef M4_FILE_MICROM
    $readmemh(`M4_FILE_MICROM, rom);
 `else
-   $readmemh("..\\..\\..\\..\\rom\\mc.rom", rom);
-   // $readmemh("/opt/xilinx/workspace/cpu11/am4/rom/mc.rom", rom);
+   $readmemh("../../../../rom/mc.rom", rom);
 `endif
 end
 
